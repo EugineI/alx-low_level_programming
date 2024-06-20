@@ -4,7 +4,7 @@
  * main - is the start point of the program
  *
  * Description : this funtion prints the message in parenthesis 
- * puts-print a statement
+ *  puts-print a statement
  *
  * Return: value is 0 to show (success)
  */
