@@ -1,7 +1,11 @@
 #include <stdio.h>
-/* main is the start point of the program
+
+/**
+ * main is the start point of the program
+ *
  * puts-print a statement
- *return value
+ *
+ * return value
  */
 int main(void)
 {
