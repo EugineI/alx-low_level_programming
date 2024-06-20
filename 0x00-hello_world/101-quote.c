@@ -3,7 +3,7 @@
 /*
  * main - function main is the start point of the program
  *
- *Description: the main function displaying a message without using a funtion
+ * Description: the main function displaying a message without using a funtion
  *
  * Return: result is 1 to show error
  */
