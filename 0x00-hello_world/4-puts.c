@@ -3,7 +3,7 @@
 /**
  * main - is the start point of the program
  *
- * Description : this funtion prints the message in parenthesis using pts function
+ * Description : this funtion prints the message in parenthesis using pts.
  *
  * Return: value is 0 to show (success)
  */
