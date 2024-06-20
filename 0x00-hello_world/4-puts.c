@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * main is the start point of the program
+ * main - is the start point of the program
  *
+ * Description : this funtion prints the message in parenthesis 
  * puts-print a statement
  *
- * return value is 0 (success)
+ * Return: value is 0 to show (success)
  */
 int main(void)
 {
