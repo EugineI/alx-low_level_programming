@@ -1,8 +1,10 @@
 #include <stdio.h>
-/*This is the main funtion of our code*/
+/* main is the start point of the program
+ * puts-print a statement
+ *return value
+ */
 int main(void)
-{	
-	/*puts creates a new line*/
+{
 	puts("\"Programming is like building a multilingual puzzle");
 	return 0;
 }
