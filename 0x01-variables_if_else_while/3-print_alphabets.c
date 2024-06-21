@@ -1,5 +1,12 @@
 #include<stdio.h>
 
+/**
+ *main - is the entry point of the program.
+ *
+ * Description: The function uses putchar to display alphabets.
+ *
+ * Return: the result is always 0 to show success
+ */
 int main(void)
 {
 	char ch; 
