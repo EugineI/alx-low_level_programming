@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main is the start point of the program
+ *main - the start point of the program
  *
  * Description: The function uses for loop and putchar to display the alphabets
  *
@@ -8,7 +8,8 @@
  */ 
 int main()
 {
-	char ch;
+	char ch; 
+
 	for (ch = 'a'; ch <= 'z';ch++)
 	{
 		putchar(ch);
