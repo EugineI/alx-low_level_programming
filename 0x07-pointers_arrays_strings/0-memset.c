@@ -8,7 +8,7 @@
  *
  * @n: integer
  *
- * Return: -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-memcpy.c -o 1-memcpy
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
