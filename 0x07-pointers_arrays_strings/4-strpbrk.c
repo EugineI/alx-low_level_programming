@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * __strpbrk - checks for matching character in s and accept
+ * _strpbrk - checks for matching character in s and accept
  *
  * @s: string
  *
@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*sptr == *acceptP)
 			{
-				return sptr;
+				return (sptr);
 			}
 		}
 	}
