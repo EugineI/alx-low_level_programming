@@ -11,16 +11,16 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char *sptr = s;
-	char *acceptP = accept;
+	char *sptr;
+	char *acceptP;
 
-	for (; *sptr != '\0'; sptr++)
+	for (sptr = s; *sptr != '\0'; sptr++)
 	{
-		for (; *acceptP != '\0'; acceptP++)
+		for (acceptP = accept; *acceptP != '\0'; acceptP++)
 		{
 			if (*sptr == *acceptP)
 			{
-				return s;
+				return sptr;
 			}
 		}
 	}
