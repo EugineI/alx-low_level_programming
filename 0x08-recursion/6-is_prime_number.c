@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * is_prime_number - checks for prime numbers
+ * prime_finder - checks for prime numbers
+ *
+ * @i: test case
  *
  * @n: the number to check
  *
@@ -31,11 +33,9 @@ int prime_finder(int n, int i)
 	return (prime_finder(n, i + 2));
 }
 /**
- *  prime_finder - finds prime number
+ * is_prime_number - finds prime number
  *
  *  @n: number
- *
- *  @i: test case
  *
  *  Return: 0 or 1;
  */
