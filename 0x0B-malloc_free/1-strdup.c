@@ -13,18 +13,18 @@ char *_strdup(char *str)
 	char *dub;
 	int len = 0;
 
-	dub = malloc((len + 1) * sizeof(char));
 	if (str == NULL)
-	{
-		return (NULL);
-	}
-	if (dub == NULL)
 	{
 		return (NULL);
 	}
 	while (str[len] != '\0')
 	{
 		len++;
+	}
+	dub = malloc((len + 1) * sizeof(char));
+	if (dub == NULL)
+	{
+		return (NULL);
 	}
 	for (i = 0; i < len; i++)
 	{
