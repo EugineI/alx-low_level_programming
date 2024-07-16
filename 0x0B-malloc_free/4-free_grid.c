@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
- * free-grid - frees allocated memory
+ * free_grid - frees allocated memory
  *
  * @grid: 2D grid
  *
