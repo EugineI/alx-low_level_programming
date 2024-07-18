@@ -23,6 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	if (n >= strlen(s2))
 	{
 		n = strlen(s2);
