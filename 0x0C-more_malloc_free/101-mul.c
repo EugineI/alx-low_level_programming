@@ -63,7 +63,18 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	mul = multiply(argv[1], argv[2]);
+	num1 = malloc(strlen(argv[1]) + 1);
+	num2 = malloc(strlen(argv[2]) + 1);
+	if (num1 == NULL || num2 == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	strcpy(num1, argv[1]);
+	strcpy(num2, argv[2]);
+	mul = multiply(num1, num2);
 	printf("%lu\n", mul);
+	free(num1);
+	free(num2);
 	return (0);
 }
