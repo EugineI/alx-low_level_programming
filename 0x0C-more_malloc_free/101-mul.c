@@ -50,6 +50,8 @@ unsigned long multiply(char *num1, char *num2)
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
+	char *num1;
+	char *num2;
 
 	if (argc != 3)
 	{
@@ -61,6 +63,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	num1 = malloc(strlen(argv[1]) + 1);
+	num2 = malloc(strlen(argv[1]) + 1);
+	if (num1 == NULL || num2 == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	strcpy(num1, argv[1]);
+	strcpy(num2, argv[2]);
 	mul = multiply(argv[1], argv[2]);
 	printf("%lu\n", mul);
 	return (0);
