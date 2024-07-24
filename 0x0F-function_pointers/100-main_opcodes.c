@@ -8,7 +8,7 @@ int main(int argc, char *argv[]);
  */
 void print_opcodes(int bytes)
 {
-	void (*main_ptr)(void) = &main;
+	void (*main_ptr)(void) = (void (*)(void))&main;
 	unsigned char *ptr = (unsigned char *)main_ptr;
 	int i;
 
@@ -32,14 +32,14 @@ int main(int argc, char *argv[])
 {
 	if (argc  != 2)
 	{
-		fprintf(stderr, "Error\n");
+		printf("Error\n");
 		return (1);
 	}
 	int bytes = atoi(argv[1]);
 
 	if (bytes < 0)
 	{
-		fprintf(stderr, "Error\n");
+		printf("Error\n");
 		return (2);
 	}
 	print_opcodes(bytes);
