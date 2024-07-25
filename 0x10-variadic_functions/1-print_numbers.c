@@ -20,15 +20,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	else if (n == 1)
 	{
-		unsigned int num = va_arg(args, unsigned int);
-		printf("%u\n", num);
+		int num = va_arg(args, int);
+		printf("%d\n", num);
 		va_end(args);
 	}
 	for (i = 0; i < n; ++i)
 	{
-		unsigned int num = va_arg(args, unsigned int);
+		int num = va_arg(args, int);
 
-		printf("%u", num);
+		printf("%d", num);
 		if (separator != NULL && i != n - 1)
 		{
 			printf("%s", separator);
