@@ -7,8 +7,8 @@
 void message(void)
 {
 	const char *first = "You're beat! and yet, you must allow, \n";
-	const char *second = "I bore my house upon my back!\n";
+	const char *second = "I bore my house upon my back! \n";
 
 	write(STDOUT_FILENO, first, 39);
-	write(STDOUT_FILENO, second, 31);
+	write(STDOUT_FILENO, second, 32);
 }
