@@ -6,7 +6,9 @@
  */
 void message(void)
 {
-	const char *first = "You're beat! and yet, you must allow,\nI bore my house upon my back!\n";
+	const char *first = "You're beat! and yet, you must allow,\n";
+	const char *second = "I bore my house upon my back!\n";
 
-	write(STDOUT_FILENO, first, 68);
+	write(STDOUT_FILENO, first, 38);
+	write(STDOUT_FILENO, second, 30);
 }
