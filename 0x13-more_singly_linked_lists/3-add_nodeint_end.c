@@ -4,7 +4,7 @@
 #include<string.h>
 /**
  * add_nodeint_end - adds a not at the end of a list
- * @head - first node
+ * @head: first node
  * @n: data
  * Return: address to the new element
  */
