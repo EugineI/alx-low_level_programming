@@ -21,20 +21,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	fd = open(filename, O_RDONLY);
-	if (fd < 0)
+	if (fd == -1)
 	{
 		free(buffer);
 		return (0);
 	}
 	reads = read(fd, buffer, letters);
-	if (reads < 0)
+	if (reads == -1)
 	{
 		close(fd);
 		free(buffer);
 		return (0);
 	}
 	written = write(2, buffer, reads);
-	if (written < 0 || written != reads)
+	if (written == -1 || written != reads)
 	{
 		close(fd);
 		free(buffer);
