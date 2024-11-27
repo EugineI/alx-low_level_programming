@@ -1,4 +1,6 @@
 #compilation using cc
+.PHONY = all school
+all: school
 CC = gcc
 SRC = $(wildcard main.c school.c)
 school:
