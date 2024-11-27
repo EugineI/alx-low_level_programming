@@ -1,2 +1,3 @@
-school: *.c
-	gcc *.c -o school
+# compiling with gcc
+school:
+	gcc main.c school.c -o school

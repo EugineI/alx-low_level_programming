@@ -1,0 +1,5 @@
+#compilation using cc
+CC = gcc
+SRC = $(wildcard main.c school.c)
+school:
+	$(CC) $(SRC) -o school
