@@ -4,7 +4,7 @@
  * binary_search -  binary search
  * @array: pointer to first number
  * @size: size or array
- * @ value: number to search
+ * @value: number to search
  * Return: index of value
  */
 int binary_search(int *array, size_t size, int value)
@@ -15,8 +15,8 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	while (left <= right)
 	{
-		printf("Searching in array:");
-		for (i =left; i <= right; i++)
+		printf("Searching in array: ");
+		for (i = left; i <= right; i++)
 		{
 			printf("%d", array[i]);
 			if (i < right)
